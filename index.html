@@ -10,20 +10,31 @@
     <body>
         <!-- start header for page and navigation -->
         <header>
-            <h1>Welcome To My Profile</h1>
+            <h1>Welcome To Deon's Profile</h1>
+            <!-- begin navigation as an unordered list with listed items  -->
+            <nav>
+                <!-- use anchor tags to attach each section -->
+                <ul>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">My Work</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </nav>
         </header>
-        <!-- begin navigation as an unordered list with listed items  -->
-        <nav>
-            <!-- use anchor tags to attach each section -->
-            <ul>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">My Work</a></li>
-                <li><a href="#">Contact Me</a></li>
-            </ul>
-        </nav>
 
         <!-- create a section for hero and designate a class for referencing-->
-        <section class="hero"></section>
+        <section class="hero">
+            <div class="hero-intro">
+                <!-- create a p and h2 tag for the hero intro section with inline styling -->
+                <p><span style="color: #3e0fa3; font-size: 45px; font-weight: bold;">Hi I'm</span></p>
+                <h2>Deon Cole</h2>
+                <p><span style="color: #3e0fa3; font-size: 27px; font-weight: lighter;">Web Developer</span></p>
+            </div>
+            <!-- set image from hero section with alt info -->
+            <div class="hero-img">
+                <img src="https://picsum.photos/id/1074/300/300" alt="Deon Avatar"/>
+            </div>
+        </section>
 
         <!-- create a section to hold about me content and a class for referencing-->
         <section class="aboutme"></section>
