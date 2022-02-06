@@ -1,0 +1,12 @@
+/* set margin, padding, and type of styling for entire page*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set styling for the body of the page */
+body{
+    background-color:#f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
