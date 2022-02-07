@@ -50,7 +50,7 @@ header nav ul li a{
     padding: 24px;
     color: #6112b3;
     text-decoration: none;
-    font-size: 2vw;
+    font-size: 20px;
 }
 
 /* use hover psuedo class to alert the user what link they are about to click in the navigation  */
@@ -76,6 +76,18 @@ header nav ul li a:hover{
     font-size: 75px;
     color: var(--blue-color);
     text-shadow: 0 0 10px rgba(229, 228, 226, 0.65);
+}
+
+.hero-intro h4{
+    color: #3e0fa3; 
+    font-size: 45px; 
+    font-weight: bold;
+}
+
+.hero-intro h5{
+    color: #3e0fa3;
+    font-size: 27px; 
+    font-weight: lighter;
 }
 
 /* Set width and height for hero image */
@@ -108,7 +120,7 @@ header nav ul li a:hover{
 
 /* set the styling for the detail info section */
 .aboutme .detail-info{
-    margin: 0 25px;
+    margin: 0;
     padding: 0 50px;
     width: 50%;
 }
@@ -151,7 +163,7 @@ header nav ul li a:hover{
     margin: 40px 40px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 /* set the styling to the image for the my work section  */
@@ -173,6 +185,7 @@ header nav ul li a:hover{
     width: 50%;
     height: 50%;
     position: absolute;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.692);
 }
 
 /* align the image to the center, set the margin bottom, and set the position to relative for the text */
@@ -246,3 +259,128 @@ header nav ul li a:hover{
 .contacts{
     display: flex;
 }
+
+/* start responsive layout */
+@media screen and (max-width: 980px) {
+    header{
+        justify-content: center;
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    header h1{
+        width: 100%;
+        font-size: 32px;
+    }
+
+    header nav{
+        width: 100%;
+        margin: 8 auto;
+    }
+
+    header nav ul li{
+        font-size: 10px;
+        margin: 0 auto;
+    }
+
+    .hero{
+        flex-wrap: wrap;
+        width: auto;
+        height: auto;
+    }
+
+    .hero-intro{
+        margin-top: 10px;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .hero-intro h4{
+        font-size: 30px;
+    }
+
+    .hero-intro h2{
+        font-size: 45px;
+    }
+    .hero-intro h5{
+        font-size: 20px;
+    }
+
+    .hero-img img{
+        width: auto;
+        height: 225px;
+    }
+
+    .aboutme{
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768){
+
+    .title{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    header nav ul li a{
+        font-size: 15px;
+    }
+
+    .title{
+        font-size: 20px;
+    }
+
+    header nav ul{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .hero{
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+    }
+        
+    .more-info{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .more-info .detail-info{
+        margin: 0;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .more-info .skills h3{
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .myportfolio{
+        width: 100%;
+        height: auto;
+    }
+
+    .myportfolio .portfolio .port-img{
+        width: auto;
+        height: auto;
+    }
+
+    .contactme{
+        height: auto;
+    }
+
+    .contact-info{
+        flex-wrap: wrap;
+    }
+
+    .myportfolio{
+        width: auto;
+    }
+}
+    
