@@ -142,8 +142,50 @@ header nav ul li a:hover{
 /* start styling for the my portfolio section */
 .myportfolio{
     margin: 0;
-    height: 600px;
+    height: auto;
     background-color: var(--section-bgcolor);
+}
+
+/* set the my work container to a flex, wrap the content, and set the space around it */
+.myportfolio .portfolio{
+    margin: 40px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* set the styling to the image for the my work section  */
+.myportfolio img{
+    width: 400px;
+    height: 200px;
+    border: 6px solid var(--secondary-color);
+    border-radius: 15px;
+}
+
+/* set the styling for the h header and make it absolute to its parent */
+.port-img h4{
+    color: var(--teriary-color);
+    font-size: 21px;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+}
+
+/* align the image to the center, set the margin bottom, and set the position to relative for the text */
+.port-img{
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* when hover over an image scale it to be bigger and put it in front of all the others */
+.port-img:hover{
+    transform: scale(1.2);
+    z-index: 9999;
 }
 /* end styling for the my portfolio section */
 
